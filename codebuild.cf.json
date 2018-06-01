@@ -65,7 +65,6 @@
                               "cloudformation:ValidateTemplate",
                               "dynamodb:CreateTable",
                               "dynamodb:DescribeTable",
-                              "lambda:*",
                               "execute-api:Invoke",
                               "apigateway:DELETE",
                               "apigateway:PUT",
@@ -80,6 +79,13 @@
                                   "CloudFormation:*"
                               ],
                               "Resource":"arn:aws:cloudformation:*:*:stack/gov-*"
+                          },
+                          {
+                              "Effect": "Deny",
+                              "Action": [
+                                "lambda:*",
+                              ],
+                              "Resource":"arn:aws:cloudformation:*:*:function/gov-*"
                           }
                       ]
                   }
