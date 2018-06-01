@@ -65,6 +65,7 @@
                               "cloudformation:ValidateTemplate",
                               "dynamodb:CreateTable",
                               "dynamodb:DescribeTable",
+                              "lambda:*",
                               "execute-api:Invoke",
                               "apigateway:DELETE",
                               "apigateway:PUT",
