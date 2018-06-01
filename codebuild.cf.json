@@ -84,7 +84,7 @@
                           {
                               "Effect": "Deny",
                               "Action": [
-                                "lambda:*",
+                                "lambda:*"
                               ],
                               "Resource":"arn:aws:cloudformation:*:*:function/gov-*"
                           }
